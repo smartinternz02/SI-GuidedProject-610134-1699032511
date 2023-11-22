@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crime Vision - About Us</title>
+    <link
+      href="{{ url_for('static', filename='css/main.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header style="border-bottom: 2px solid white;">
+      <div class="site-name">Crime Vision</div>
+      <div class="buttons-container">
+        <button
+          class="nav-button"
+          onclick="location.href='{{ url_for('home') }}';"
+        >
+          Home
+        </button>
+        <button
+          class="nav-button"
+          onclick="location.href='{{ url_for('predict') }}';"
+        >
+          Predict
+        </button>
+        <button
+          class="nav-button"
+          onclick="location.href='{{ url_for('about') }}';"
+        >
+          About Us
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="about_us">
+        <div class="container">
+          <h1 style="text-align: center"><b>About Us</b></h1>
+          <div class="developer-info">
+            <div class="developer">
+              <h2>Ambika Panse</h2>
+              <p>VIT Vellore(3rd year B.Tech CSE student)</p>
+              <a href="https://github.com/ambikapanse" style="color: #fff; text-decoration: underline;">GitHub Link</a>
+            </div>
+            <div class="developer">
+              <h2>Diya Ramani</h2>
+              <p>VIT Vellore(3rd year B.Tech IT student)</p>
+              <a href="https://github.com/D-2002" style="color: #fff; text-decoration: underline;">GitHub Link</a>
+            </div>
+            <div class="developer">
+              <h2>Ridhima Taneja</h2>
+              <p>VIT Vellore(3rd year B.Tech IT student)</p>
+              <a href="https://github.com/ridhima2718" style="color: #fff; text-decoration: underline;">GitHub Link</a>
+            </div>
+          </div>
+          <br />
+          <nr />
+          <div class="our-mission">
+            <h2 style="text-align: center">Our Mission</h2>
+            <p>
+              To develop an innovative platform that empowers both law enforcement agencies and community members in effectively identifying 
+              and combating crime.Our commitment is to foster a safer environment by providing accessible tools and resources, 
+              thereby fostering a more vigilant and secure society.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Footer content -->
+    </footer>
+  </body>
+</html>

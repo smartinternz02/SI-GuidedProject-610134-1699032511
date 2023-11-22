@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crime Vision - Home</title>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"> 
+  </head>
+
+  <body>
+    <header style="border-bottom: 2px solid white;">
+      <div class="site-name">Crime Vision</div>
+      <div class="buttons-container">
+    <button class="nav-button" onclick="location.href='{{ url_for('home') }}';">
+        Home
+    </button>
+    <button class="nav-button" onclick="location.href='{{ url_for('predict') }}';">
+        Predict
+    </button>
+    <button class="nav-button" onclick="location.href='{{ url_for('about') }}';">
+        About Us
+    </button>
+       </div>
+    </header>
+
+    <main style="margin-top:20px; padding-bottom:20px;">
+      <section class="content-section">
+        <section class="content-text">
+          <h3>BECOME AWARE,ALERT,ADEPT!</h3>
+          Crime Vision leverages advanced deep learning technology to analyze
+          images and video footage related to crime scenes or incidents. Our
+          system employs neural networks trained on extensive
+          datasets to identify, classify, and predict various types of criminal
+          activities. By utilizing several algorithms, Crime Vision
+          assists law enforcement agencies, investigators, and security
+          professionals in enhancing crime scene investigations, forensic
+          analysis, and surveillance operations. Our platform aims to
+          revolutionize crime prevention strategies by providing insightful data
+          analysis and efficient pattern recognition, contributing to safer
+          communities and proactive law enforcement efforts.
+        </section>
+
+        <img src="{{ url_for('static', filename='images/crime.jpeg') }}" alt="crime Image" class="content_img" / >
+        
+      </section>
+    </main>
+
+    <footer>
+      <!-- Footer content -->
+    </footer>
+  </body>
+</html>
